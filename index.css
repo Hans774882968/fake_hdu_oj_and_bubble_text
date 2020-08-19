@@ -129,6 +129,6 @@ marquee strong{
     color: orange;
 }
 
-.center-info div.server-info{
+#server-info{
     color: green;
 }
