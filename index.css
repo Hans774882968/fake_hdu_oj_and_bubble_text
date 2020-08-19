@@ -47,7 +47,7 @@ a{
 .banner-up{
     background-color: #1a5cc8;
     display: grid;
-    grid-template-columns: calc(100% / 4) calc(100% / 4) calc(100% / 4) calc(100% / 4);
+    grid-template-columns: repeat(4,calc(100% / 4));
     margin: 1px 0;
 }
 
@@ -61,12 +61,12 @@ a{
 
 .banner-down{
     display: grid;
-    grid-template-columns: calc(100% / 4) calc(100% / 4) calc(100% / 4) calc(100% / 4);
+    grid-template-columns: repeat(4,calc(100% / 4));
 }
 
 .banner-cols{
     display: grid;
-    grid-template-rows: calc(100% / 5) calc(100% / 5) calc(100% / 5) calc(100% / 5) calc(100% / 5);
+    grid-template-rows: repeat(5,calc(100% / 5));
 }
 
 .banner-cols a,.left-links a,.right-links a{
@@ -107,7 +107,7 @@ marquee strong{
     width: calc(100% - 2 * 15%);
     border: 1px solid #1a5cc8;
     display: grid;
-    grid-template-columns: calc((100% - 66%) / 2) 66% calc((100% - 66%) / 2);
+    grid-template-columns: 1fr 66% 1fr;
 }
 
 #bottom-nav .left-links,#bottom-nav .right-links{
