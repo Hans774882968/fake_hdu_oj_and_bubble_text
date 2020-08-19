@@ -7,33 +7,10 @@ a{
     text-decoration: none;
 }
 
-/* 防止文字溢出 */
-@media(max-width: 64em){
-    html{
-        font-size: 75%;
-    }
-}
-
-@media(max-width: 51em){
-    html{
-        font-size: 65%;
-    }
-}
-
-@media(max-width: 44.5em){
-    html{
-        font-size: 55%;
-    }
-}
-
-@media(max-width: 38em){
-    html{
-        font-size: 45%;
-    }
-}
-
 /* 导航栏 */
+/* #navbar和#bottom-nav都使用box-sizing: border-box把border算在总宽度里 */
 #navbar{
+    box-sizing: border-box;
     margin-top: 0.5%;
     margin-left: 15%;
     width: calc(100% - 2 * 15%);
@@ -101,6 +78,7 @@ marquee strong{
 
 /* 底部 */
 #bottom-nav{
+    box-sizing: border-box;
     margin-top: 10%;
     margin-left: 15%;
     padding: 10px 0;
@@ -131,4 +109,33 @@ marquee strong{
 
 #server-info{
     color: green;
+}
+
+/* 防止文字溢出 */
+@media(max-width: 64em){
+    html{
+        font-size: 80%;
+    }
+    #navbar{
+        margin-left: calc((100% - 90%) / 2);
+        width: 90%;
+    }
+    #bottom-nav{
+        margin-left: calc((100% - 90%) / 2);
+        width: 90%;
+    }
+}
+
+@media(max-width: 44.5em){
+    html{
+        font-size: 60%;
+    }
+    #navbar{
+        margin-left: 0;
+        width: auto;
+    }
+    #bottom-nav{
+        margin-left: 0;
+        width: auto;
+    }
 }
