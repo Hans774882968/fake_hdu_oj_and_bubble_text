@@ -1,0 +1,134 @@
+body{
+    margin: 0;
+    background: url(./background.jpg);
+}
+
+a{
+    text-decoration: none;
+}
+
+/* 防止文字溢出 */
+@media(max-width: 64em){
+    html{
+        font-size: 75%;
+    }
+}
+
+@media(max-width: 51em){
+    html{
+        font-size: 65%;
+    }
+}
+
+@media(max-width: 44.5em){
+    html{
+        font-size: 55%;
+    }
+}
+
+@media(max-width: 38em){
+    html{
+        font-size: 45%;
+    }
+}
+
+/* 导航栏 */
+#navbar{
+    margin-top: 0.5%;
+    margin-left: 15%;
+    width: calc(100% - 2 * 15%);
+    border: 1px solid #1a5cc8;
+}
+
+#navbar img{
+    width: 100%;
+}
+
+.banner-up{
+    background-color: #1a5cc8;
+    display: grid;
+    grid-template-columns: calc(100% / 4) calc(100% / 4) calc(100% / 4) calc(100% / 4);
+    margin: 1px 0;
+}
+
+.banner-up div{
+    margin: 3px 0;
+    color: white;
+    font-weight: bold;
+    font-size: 1.1em;
+    text-align: center;
+}
+
+.banner-down{
+    display: grid;
+    grid-template-columns: calc(100% / 4) calc(100% / 4) calc(100% / 4) calc(100% / 4);
+}
+
+.banner-cols{
+    display: grid;
+    grid-template-rows: calc(100% / 5) calc(100% / 5) calc(100% / 5) calc(100% / 5) calc(100% / 5);
+}
+
+.banner-cols a,.left-links a,.right-links a{
+    color: #1a5cc8;
+    text-align: center;
+    margin: 1px 0;
+}
+
+.banner-cols a:hover,.left-links a:hover,.right-links a:hover{
+    color: orange;
+}
+
+.banner-cols a.bc{
+    color: red;
+    font-weight: bold;
+}
+
+sup.beta{
+    color: gray;
+    font-weight: bold;
+}
+
+marquee{
+    margin-top: 1%;
+    margin-left: 25%;
+    width: calc(100% - 2 * 25%);
+}
+
+marquee strong{
+    color: red;
+}
+
+/* 底部 */
+#bottom-nav{
+    margin-top: 10%;
+    margin-left: 15%;
+    padding: 10px 0;
+    width: calc(100% - 2 * 15%);
+    border: 1px solid #1a5cc8;
+    display: grid;
+    grid-template-columns: calc((100% - 66%) / 2) 66% calc((100% - 66%) / 2);
+}
+
+#bottom-nav .left-links,#bottom-nav .right-links{
+    margin: auto;
+    font-weight: bold;
+    color: #1a5cc8;
+}
+
+#bottom-nav .center-info{
+    font-size: 1em;
+    text-align: center;
+}
+
+.center-info a{
+    color: #1a5cc8;
+}
+
+.center-info a:hover{
+    color: orange;
+}
+
+.center-info div.server-info{
+    color: green;
+}

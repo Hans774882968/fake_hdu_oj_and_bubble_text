@@ -1,0 +1,79 @@
+﻿<head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <title>再现hduoj+点击出现文字上浮</title>
+    <link rel="stylesheet" type="text/css" href = "./index.css" />
+    <script src="https://cdn.staticfile.org/jquery/1.10.2/jquery.min.js"></script>
+</head>
+
+<body>
+    <div id = "navbar">
+        <img src = "./banner.jpg" />
+        <div class = "banner-up">
+            <div>Online Judge</div>
+            <div>Online Exercise</div>
+            <div>Online Teaching</div>
+            <div>Online Contests</div>
+        </div>
+        <div class = "banner-down">
+            <div class = "banner-cols">
+                <a>F.A.Q</a>
+                <a>Hand In Hand</a>
+                <a>Online Acmers</a>
+                <a>Forum | Discuss</a>
+                <a>Statistical Charts</a>
+            </div>
+            <div class = "banner-cols">
+                <a>Problem Archive</a>
+                <a>Realtime Judge Status</a>
+                <a>Authors Ranklist</a>
+            </div>
+            <div class = "banner-cols">
+                <a>C/C++/Java Exams </a>    
+                <a>ACM Steps</a>
+                <a>Go to Job</a>
+                <a>Contest LiveCast</a>
+                <a>ICPC@China</a>
+            </div>
+            <div class = "banner-cols">
+                <a href="http://bestcoder.hdu.edu.cn" class = "bc">Best Coder<sup class = "beta">beta</sup></a>
+                <a>VIP | STD Contests</a>
+                <a>Virtual Contests</a>
+                <a>DIY | Web-DIY beta</a>
+                <a>Recent Contests</a>
+            </div>
+        </div>
+    </div>
+    <marquee scrollamount="2" width="600" scrolldelay="30">
+        <strong>
+            HOT~ 有信奥基础的杭电2020级新生，可以加QQ：562195513
+        </strong>
+    </marquee>
+    <div id = "bottom-nav">
+        <div class = "left-links">
+            <a href = "http://acm.hdu.edu.cn" target = "_blank">Home</a> | <a href = "#navbar">Top</a>
+        </div>
+        <div class = "center-info">
+            <div>Hangzhou Dianzi University Online Judge 3.05</div>
+            <div>
+                Copyright © 2005-2020 <a href = "mailto:acm@hdu.edu.cn">HDU ACM Team</a>. All Rights Reserved.
+            </div>
+            <div>
+                Designer & Developer : <a href = "https://github.com/Hans774882968/" target = "_blank">hans774882968</a>
+            </div>
+            <div class = "server-info">
+                Total 0.000000(s) query 0, Server time : 2020-08-18 17:15:24, Gzip enabled
+            </div>
+        </div>
+        <div class = "right-links">
+            <a href = "http://acm.hdu.edu.cn/admin" target = "_blank">Administration</a>
+        </div>
+    </div>
+    <div id = "output"></div>
+    <script>
+        function print(s){
+            document.getElementById("output").innerText += String(s) + "\n";
+        }
+    </script>
+    <script src="./index.js"></script>
+    <script src="./click_bubble.js"></script>
+</body>
